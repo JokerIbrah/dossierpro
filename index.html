@@ -59,7 +59,10 @@
 <head>
     <center>
     <!--Avec le code PHP que j'introduirais comme le logo est souvent utilisé je mettrais un fichier appart et utiliserais la fonction required once-->
-    <img source="C:\Users\Admin\Downloads\dossier projet\logo V.Parrot.png" alt="logo V.Parrot">
+    <php
+require_once '';
+?>
+
 </center>
 </head>
 <ul class="menu">
@@ -68,10 +71,10 @@
 </li>
 <!--Une fois que j'aurais mis du PhP on poura changer ca avec la fonction required once-->
 <li>
-<h1><a href="C:\Users\Admin\Downloads\dossier projet\contact.html">CONTACT</a></h1>
+<h1><a href="contact.html">CONTACT</a></h1>
 </li>
 <li>
-<h1><a href="C:\Users\Admin\Downloads\dossier projet\page de boutique.html">VENTE DE VEHICULE</a></h1>
+<h1><a href="page de boutique.html">VENTE DE VEHICULE</a></h1>
 </li>
 </ul>
 <div class="yellowcase">
@@ -80,6 +83,24 @@
 </div>
 <!--Je vais mettre les témoignage dans la première page pour attirer les clients-->
 
+<h1>Témoignages</h1>
+
+<?php include 'script_temoignages.php'; ?>
+<div style="background-color: white;">
+<h3>Laisser un témoignage</h3>
+</div>
+<form action="traitement.php" method="post">
+    <label for="nom">Nom :</label><br>
+    <input type="text" id="nom" name="nom" required><br>
+    
+    <label for="email">Adresse e-mail :</label><br>
+    <input type="email" id="email" name="email" required><br>
+    
+    <label for="message">Message :</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+    
+    <input type="submit" value="Envoyer">
+</form>
 
 
 </body>
