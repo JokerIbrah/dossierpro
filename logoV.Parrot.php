@@ -11,9 +11,11 @@
 </head>
 
 <body>
-    <center>
-        <img src="logo_V_Parrot.png" alt="logo V.Parrot">
-    </center>
+    <header>
+        <center>
+            <img src="logo_V_Parrot.png" alt="logo V.Parrot">
+        </center>
+    </header>
 </body>
 
 </html>
