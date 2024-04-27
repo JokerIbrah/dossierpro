@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <style>
         img {
-            width: 50%;
+            width: 25%;
+            height: 50%;
         }
     </style>
 </head>
+
 <body>
-    <img src="logo_V_Parrot.png" alt="logo V.Parrot">
+    <center>
+        <img src="logo_V_Parrot.png" alt="logo V.Parrot">
+    </center>
 </body>
+
 </html>

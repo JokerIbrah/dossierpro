@@ -7,15 +7,7 @@
     <metadata><description page accueil de garage automobile de Toulouse témoignage client></description> </metadata>
     <!--Je fais le choix de mettre une balise style je veux pas alourdir le style avec un doc style.css et un fichier boodstrap-->
     <style>
-        head {
-            justify-content: center;
-            text-justify: center;
-            width: 50%;
-            height: 1400px;
-        }
-        h1 {
-            size: 12px;
-        }
+
         h2 {
            text-align: center;
             margin: 12px;
@@ -31,61 +23,28 @@
         .yellowcase{
             background-color: yellow;
         }
-         /* Style pour le menu */
-         .menu {
-            list-style-type: none; /* Supprime les puces de la liste */
-            margin: 0; /* Supprime les marges par défaut */
-            padding: 0; /* Supprime les espaces intérieurs par défaut */
-            background-color: red; /* Couleur de fond du menu */
-        }
-        /* Style pour chaque élément du menu */
-        .menu li {
-            display: inline; /* Affiche les éléments côte à côte */
-        }
-        /* Style pour les liens dans le menu */
-        .menu li a{
-            display: inline-block; /* Permet de définir la largeur des liens */
-            padding: 8px 16px; /* Ajoute un espace intérieur aux liens */
-        text-decoration: none; /* Supprime le soulignement par défaut */
-            color: black; /* Couleur du texte */
-        }
-        /* Style pour les liens au survol */
-        .menu li a:hover {
-            background-color: blue; /* Couleur de fond au survol */
-        }
+         
     </style>
 </header>
 <body>
 <head>
-    <center>
-    <!--Avec le code PHP que j'introduirais comme le logo est souvent utilisé je mettrais un fichier appart et utiliserais la fonction required once-->
-    <php
-require_once '';
-?>
-
-</center>
+    <?phpinclude 'logo V.Parrot.php';
 </head>
-<ul class="menu">
-    <li>
-<h1>ACCEUIL</h1> 
-</li>
-<!--Une fois que j'aurais mis du PhP on poura changer ca avec la fonction required once-->
-<li>
-<h1><a href="contact.html">CONTACT</a></h1>
-</li>
-<li>
-<h1><a href="page de boutique.html">VENTE DE VEHICULE</a></h1>
-</li>
-</ul>
+            ?> 
+            <?php include 'index.php';
+            ?>
+
 <div class="yellowcase">
 <h2>Qui sommes-nous?</h2>
 <p>Nous sommes un garage basée à Toulouse attaché à offrir un service de qualité à ses clients </p>
 </div>
-<!--Je vais mettre les témoignage dans la première page pour attirer les clients-->
 
 <h1>Témoignages</h1>
 
-<?php include 'script_temoignages.php'; ?>
+         <?php
+    include "script_temoignages.php";
+?>
+
 <div style="background-color: white;">
 <h3>Laisser un témoignage</h3>
 </div>
@@ -101,6 +60,13 @@ require_once '';
     
     <input type="submit" value="Envoyer">
 </form>
+<footer>
+    <?php
+    
+  include"foter.php";
+    ?>
+
+</footer>
 
 
 </body>
