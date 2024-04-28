@@ -1,53 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-    <head>
-    <metadata><title>Contact</title></metadata>
-<metadata> <description page de contact et horraire du garage V.Parrot> </description>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <meta name="description" content="Page de contact et horaires du garage V.Parrot">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        .horraire {
+            text-align: center;
+        }
+        form {
+            text-align: center; 
+        }
+        label, input, textarea {
+            background-color: yellow;
+        }
+    </style>
 </head>
-<style>
-    .horraire{
-        text-align: center;
-    }
-    form{
-        text-align: center; 
-    }
-    label,input,textarea{background-color: yellow;}
-    
-</style>
-    <body>
-    
-        <header>
-            <?phpinclude 'logo V.Parrot.php';
-
-            ?> 
-            <?php include 'index.php';
-            ?>
-             <!--horraire d'ouverture-->
-             <div class="horraire">
-                <img source="horraire V.Parrot.png" alt="horraire du garage">
-            </div>
-            <!--formulaire de contact avec l'atelier-->
-            <form action="" method="post">
-                <label for="nom">Nom :</label><br>
-                <input type="text" id="nom" name="nom" required><br>
-            
-                <label for="email">Email :</label><br>
-                <input type="email" id="email" name="email" required><br>
-                <label for="message">Message :</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br>
-                <input type="submit" value="Contacter l'atelier">
-            </p>
-        
-           
-        <footer>
-            <?php
-            
-          include"foter.php";
-            ?>
-        
-        </footer>
-    </body>
-
-
+<body>
+    <header>
+        <?php include 'logo V.Parrot.php'; ?>
+        <?php include 'index.php'; ?>
+        <!-- Horaires d'ouverture -->
+        <div class="horraire">
+            <img src="horraire V.Parrot.png" alt="horaires du garage">
+        </div>
+        <!-- Formulaire de contact avec l'atelier -->
+        <form action="" method="post">
+            <label for="nom">Nom :</label><br>
+            <input type="text" id="nom" name="nom" required><br>
+            <label for="email">Adresse e-mail :</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Envoyer">
+        </form>
+    </header>
+    <footer>
+        <?php include "footer.php"; ?>
+    </footer>
+</body>
 </html>
