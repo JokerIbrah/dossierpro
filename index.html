@@ -1,13 +1,16 @@
-<!doctype html>
+<!Doctype html>
 <!--je vais préciser que le language du document html est en français pour aider à la traduction si necessaire-->
 <html lang="fr"> 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <!-- on va mettre un titre et une description pour le referencement du site -->
-    <metadata><title>V.Parrot</title></metadata>
+    <title>V.Parrot</title>
     <metadata><description page accueil de garage automobile de Toulouse témoignage client></description> </metadata>
     <!--Je fais le choix de mettre une balise style je veux pas alourdir le style avec un doc style.css et un fichier boodstrap-->
     <link rel="stylesheet" href="bootstrap.min.css">
-</head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
     <style>
 
         h2 {
@@ -25,16 +28,11 @@
         .yellowcase{
             background-color: bg-warning;
         }
-        <link href="style.css" rel="stylesheet" type="text/css" />
+       
     </style>
 </head>
 <body>
-<
-    <?phpinclude 'logo V.Parrot.php';
 
-            ?> 
-            <?php include 'index.php';
-            ?>
 
 <div class="yellowcase">
 <h2>Qui sommes-nous?</h2>
@@ -43,9 +41,6 @@
 
 <h1>Témoignages</h1>
 
-         <?php
-    include "script_temoignages.php";
-?>
 
 <h3>Laisser un témoignage</h3>
 </div>
@@ -62,10 +57,7 @@
     <input type="submit" value="Envoyer">
 </form>
 <footer>
-    <?php
-    
-  include"foter.php";
-    ?>
+
 
 </footer>
 

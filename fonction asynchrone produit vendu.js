@@ -1,7 +1,7 @@
 async function avertirVenteProduit() {
     try {
         // Simuler une requête asynchrone vers le serveur pour avertir de la vente du produit
-        const reponseServeur = await fetch('https://v.parrot.fr/pagedeboutique', {
+        const response = await fetch('https://#', {
             method: 'POST', 
             headers: {
                 'Content-Type': 'application/json'
@@ -10,16 +10,15 @@ async function avertirVenteProduit() {
         });
 
         // Vérifier si la requête a réussi
-        if (reponseServeur.ok) {
-            const resultat = await reponseServeur.json();
-            console.log(resultat.message); // Afficher un message de confirmation ou une réponse du serveur
+        if (response.ok) {
+            const result = await response.json();
+            console.log(result.message); // Afficher un message de confirmation ou une réponse du serveur
         } else {
             // Gérer les cas d'erreur
-            console.error('Erreur lors de la requête : ' + reponseServeur.status);
+            console.error('Erreur lors de la requête : ' + response.status);
         }
-    } catch (erreur) {
+    } catch (error) {
         // Gérer les erreurs de la requête
-        console.error('Erreur : ' + erreur.message);
+        console.error('Erreur : ' + error.message);
     }
 }
-

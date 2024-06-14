@@ -4,6 +4,7 @@
     <style>
         img {
             width: 50%;
+            height: auto;
         }
     </style>
 </head>

@@ -19,7 +19,7 @@
 </head>
 <body>
     <header>
-        <img src="logo_V_Parrot.png" alt="logo V.Parrot">
+        <img src="logo V.Parrot.png" alt="logo V.Parrot">
     </header>
 </body>
 </html>
